@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+.login {
+     background-color: rgba(130,179,97,0.923);
+    border: none;
+
+}
+.login:focus{
+    outline: none;
+box-shadow:none;
+
+
+}
+.login:hover{
+     background-color: rgba(107, 148, 80, 0.923);
+     
+}
+.my-custom-input:focus{
+       box-shadow: none !important;
+  border-color: #d1d5db !important; /* Tailwind's gray-300 */
+  outline: none !important;
+  background-color:white !important;
+  border-color:rgba(130,179,97,0.923) !important;
+
+}
+.my-custom-input:hover{
+    border-color:rgba(130,179,97,0.923) !important; 
+}
+.navbar{
+     background-color: white;
+}
+
+
+
+
+
