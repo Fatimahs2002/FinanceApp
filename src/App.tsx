@@ -1,20 +1,25 @@
+import './App.css';
+import './index.css';
 
-import './App.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-// import Login from './components/Login';
-import "./index.css";
+import Home from './components/Home';
+import SendMony from './components/SendMony';
+import ReceiveMony from './components/ReceiveMony';
+import Logs from './components/Logs';
 
-import AppSidebar from './components/Sidebar';
 function App() {
-
-
   return (
-    <>
-
-{/* <Login /> */}
-<AppSidebar  />
-    </>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/send" element={<SendMony />} />
+        <Route path="/receive" element={<ReceiveMony />} />
+        <Route path="/logs" element={<Logs />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
+

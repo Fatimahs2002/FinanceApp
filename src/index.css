@@ -31,6 +31,40 @@ box-shadow:none;
 }
 
 
+/* home.tsx*/
 
+.icon{
+     color: rgba(130,179,97,0.923);
+}
+
+/* In your global CSS (e.g. styles.css or App.css) */
+.icon {
+  color: rgba(130, 179, 97, 0.923);
+  font-size: 6rem !important;
+}
+@media (min-width: 640px) {
+  .icon {
+    font-size: 8rem !important;
+  }
+}
+@media (min-width: 768px) {
+  .icon {
+    font-size: 10rem !important;
+  }
+}
+@media (min-width: 1024px) {
+  .icon {
+    font-size: 12rem !important;
+  }
+}
+.go{
+  background-color: rgba(130,179,97,0.923);
+border: none;
+}
+.go:focus{
+   outline: none;
+box-shadow:none;
+
+}
 
 
